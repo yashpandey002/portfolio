@@ -1,0 +1,46 @@
+.header {
+    &__nav {
+        padding: 6rem 4rem;
+
+        align-items: center;
+        justify-content: space-between;
+
+        &-logo {
+            font-size: 32px;
+            color: var(--light-grey);
+        }
+
+        &-link {
+            font-size: var(--size-large);
+            color: var(--light-grey);
+            transition: color 0.3s;
+
+            &-container {
+                gap: 4rem;
+                align-items: center;
+            }
+
+            &--resume {
+                align-items: center;
+            }
+
+            &:hover {
+                color: var(--white);
+            }
+
+            &--twitter:hover {
+                color: #1da1f2;
+            }
+            &--linkedin:hover {
+                color: #0077b5;
+            }
+            &--github:hover {
+                color: #2da44e;
+            }
+        }
+
+        &-icon {
+            font-size: 2rem;
+        }
+    }
+}
