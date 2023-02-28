@@ -1,4 +1,11 @@
 .hero {
+    margin-bottom: 15rem;
+
+    &__container {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
     &__primary {
         margin-bottom: 4.8rem;
     }
@@ -61,5 +68,99 @@
         position: absolute;
         top: -170%;
         left: -25%;
+    }
+}
+
+.about {
+    margin-bottom: 15rem;
+
+    &__heading {
+        margin-bottom: 3.2rem;
+    }
+
+    &__mainBox {
+        column-gap: 12rem;
+    }
+
+    &__skillsBox {
+        grid-template-rows: repeat(4, 1fr);
+        row-gap: 2.4rem;
+
+        &__skillImg {
+            height: 50px;
+        }
+
+        &-row {
+            gap: 2.4rem;
+        }
+    }
+
+    &__descPara {
+        font-size: var(--size-large);
+        color: var(--light-grey);
+        line-height: 1.7;
+    }
+
+    &__descPara:not(:last-child) {
+        margin-bottom: 2.4rem;
+    }
+}
+
+.projects {
+    margin-bottom: 15rem;
+
+    &__heading {
+        margin-bottom: 6.4rem;
+    }
+
+    &__mainBox {
+        flex-direction: column;
+        gap: 9.6rem;
+    }
+}
+
+.contact {
+    margin-bottom: 18rem;
+
+    &__mainBox {
+        width: 83%;
+        margin: 0 auto;
+        padding-left: 7.2rem;
+        padding-top: 5.6rem;
+        border-radius: 10px;
+    }
+
+    &__heading {
+        font-size: 7.2rem;
+        margin-bottom: 3.2rem;
+        color: var(--white);
+    }
+
+    &__desc {
+        max-width: 400px;
+        font-size: var(--size-large);
+        color: var(--white);
+        line-height: 1.6;
+        margin-bottom: 5.6rem;
+    }
+
+    &__email {
+        font-size: var(--size-large);
+        font-weight: 300;
+        color: var(--white);
+        padding: 2.4rem 0;
+        padding-left: 12rem;
+        padding-right: 3.2rem;
+
+        border: 1px solid var(--white);
+
+        &-icon {
+            font-size: 1.6rem;
+            color: var(--white);
+        }
+    }
+
+    &__imgBox {
+        padding-top: 12rem;
     }
 }

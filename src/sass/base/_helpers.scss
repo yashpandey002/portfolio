@@ -11,6 +11,32 @@
     display: grid;
 }
 
+.grid--2-rows {
+    grid-template-rows: repeat(2, 1fr);
+}
+
 .hide {
     display: none;
+}
+
+.text-gradient {
+    background: linear-gradient(
+        74.44deg,
+        #7266ff 18.61%,
+        #ff6666 52.65%,
+        #69ff66 77.37%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.bg-gradient {
+    background: linear-gradient(
+        97.51deg,
+        #7266ff 0%,
+        #ff6666 63.72%,
+        #69ff66 106.98%
+    );
 }

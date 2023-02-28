@@ -1,0 +1,40 @@
+.footer {
+    margin-bottom: 3.2rem;
+
+    &__mainBox {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__linkContainer {
+        gap: 5.6rem;
+    }
+
+    &__link {
+        &-icon {
+            font-size: 4rem;
+            color: var(--light-grey);
+            transition: color 0.3s;
+
+            &--twitter:hover {
+                color: #1da1f2;
+            }
+            &--linkedin:hover {
+                color: #0077b5;
+            }
+            &--github:hover {
+                color: #2da44e;
+            }
+        }
+
+        &--upwork:hover {
+            fill: #14a800;
+        }
+    }
+
+    &__desc {
+        font-size: var(--size-large);
+        color: var(--light-grey);
+        font-weight: 300;
+    }
+}

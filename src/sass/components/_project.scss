@@ -1,0 +1,50 @@
+.project {
+    gap: 12rem;
+
+    &__heading {
+        font-size: 3.2rem;
+        color: var(--white);
+        margin-bottom: 1.6rem;
+    }
+
+    &__desc {
+        font-size: var(--size-large);
+        color: var(--light-grey);
+        line-height: 1.5;
+        margin-bottom: 4rem;
+    }
+
+    &__linkBox {
+        gap: 3.2rem;
+        align-items: center;
+        backface-visibility: hidden;
+    }
+
+    &__github {
+        font-size: 3.2rem;
+        color: var(--light-grey);
+        transition: color 0.3s;
+
+        &:hover {
+            color: #2da44e;
+        }
+    }
+
+    &__viewLive {
+        padding: 2px;
+        font-size: var(--size-large);
+        color: var(--main-grey);
+        transition: transform 0.3s;
+
+        &:hover {
+            transform: skew(-20deg);
+        }
+    }
+
+    &__screen {
+        transition: transform 0.3s;
+        &:hover {
+            transform: scale(1.03);
+        }
+    }
+}

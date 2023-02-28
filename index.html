@@ -22,14 +22,15 @@
         <header class="header">
             <nav class="header__nav flex">
                 <div class="header__nav-logo-box">
-                    <div class="header__nav-logo"><a href="#">YP()</a></div>
+                    <div class="header__nav-logo"><a href="/">YP()</a></div>
                 </div>
                 <div class="header__nav-link-box">
                     <ul class="header__nav-link-container flex">
                         <li>
                             <a
-                                href="#"
+                                href="https://twitter.com/pandeyyash_"
                                 class="header__nav-link header__nav-link--twitter"
+                                target="_blank"
                             >
                                 <ion-icon
                                     name="logo-twitter"
@@ -39,8 +40,9 @@
                         </li>
                         <li>
                             <a
-                                href="#"
+                                href="https://www.linkedin.com/in/pandeyyash"
                                 class="header__nav-link header__nav-link--linkedin"
+                                target="_blank"
                             >
                                 <ion-icon
                                     name="logo-linkedin"
@@ -50,8 +52,9 @@
                         </li>
                         <li>
                             <a
-                                href="#"
+                                href="https://github.com/yashpandey002"
                                 class="header__nav-link header__nav-link--github"
+                                target="_blank"
                             >
                                 <ion-icon
                                     name="logo-github"
@@ -60,7 +63,9 @@
                             </a>
                         </li>
                         <li>
-                            <a href="#" class="header__nav-link">About me</a>
+                            <a href="#about" class="header__nav-link local-link"
+                                >About me</a
+                            >
                         </li>
                         <li>
                             <a
@@ -81,7 +86,7 @@
         </header>
         <main>
             <section class="hero">
-                <div class="container">
+                <div class="hero__container">
                     <div class="hero__primary">
                         <div class="hero__subheading-box">
                             <h3 class="hero__subheading flex">
@@ -133,7 +138,9 @@
                                 </p>
                             </div>
                             <div class="hero__cta-box">
-                                <a href="#" class="cta__primary"
+                                <a
+                                    href="#projects"
+                                    class="cta__primary local-link"
                                     >See my projects</a
                                 >
                                 <img
@@ -146,8 +153,373 @@
                     </div>
                 </div>
             </section>
+            <section class="about" id="about">
+                <div class="container">
+                    <h2 class="about__heading">
+                        About <span class="text-gradient">Me</span> & My
+                        <span class="text-gradient">Skills</span>
+                    </h2>
+                </div>
+                <div class="container">
+                    <div class="about__mainBox flex">
+                        <div class="about__desc">
+                            <p class="about__descPara font__secondary">
+                                Namaste, I am Yash Pandey, A creative web
+                                developer from Udaipur, India. I love to code
+                                and always enjoyed developing problem solving
+                                and visually appealing user interfaces.
+                            </p>
+                            <p class="about__descPara font__secondary">
+                                As a web developer, I have worked on a variety
+                                of projects from small business websites to
+                                complex CRUD Web apps, using modern technologies
+                                like HTML, CSS, SCSS, Tailwind & Javascript.
+                            </p>
+                            <p class="about__descPara font__secondary">
+                                I also like to give back to the community by
+                                contributing to open-source projects and believe
+                                in sharing knowledge to help myself and others
+                                grow in the tech community. In my free time, I
+                                enjoy playing football to stay active and fit.
+                                Send me hey on Twitter.
+                            </p>
+                        </div>
+                        <div class="about__skillsBox grid">
+                            <div class="about__skillsBox-row flex">
+                                <img
+                                    src="./assets/img/html.svg"
+                                    alt="HTML"
+                                    class="about__skillImg"
+                                />
+                                <img
+                                    src="./assets/img/css.svg"
+                                    alt="CSS"
+                                    class="about__skillImg"
+                                />
+                                <img
+                                    src="./assets/img/js.svg"
+                                    alt="Javascript"
+                                    class="about__skillImg"
+                                />
+                            </div>
+                            <div class="about__skillsBox-row flex">
+                                <img
+                                    src="./assets/img/tailwind.svg"
+                                    alt="Tailwind"
+                                    class="about__skillImg"
+                                />
+                                <img
+                                    src="./assets/img/bootstrap.svg"
+                                    alt="Bootstrap"
+                                    class="about__skillImg"
+                                />
+                                <img
+                                    src="./assets/img/sass.svg"
+                                    alt="SCSS"
+                                    class="about__skillImg"
+                                />
+                            </div>
+                            <div class="about__skillsBox-row flex">
+                                <img
+                                    src="./assets/img/npm.svg"
+                                    alt="NPM"
+                                    class="about__skillImg"
+                                />
+                                <img
+                                    src="./assets/img/git.svg"
+                                    alt="GIT"
+                                    class="about__skillImg"
+                                />
+                            </div>
+                            <div class="about__skillsBox-row flex">
+                                <img
+                                    src="./assets/img/github.svg"
+                                    alt="Github"
+                                    class="about__skillImg"
+                                />
+                                <img
+                                    src="./assets/img/figma.svg"
+                                    alt="Figma"
+                                    class="about__skillImg"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="projects" id="projects">
+                <div class="container">
+                    <h2 class="projects__heading">
+                        <span class="text-gradient">Projects</span> I Worked On
+                    </h2>
+                </div>
+                <div class="container">
+                    <div class="projects__mainBox flex">
+                        <div class="project flex taskOn">
+                            <div class="project__textBox">
+                                <h3 class="project__heading">TaskOn</h3>
+                                <p class="project__desc font__secondary">
+                                    An advanced To-do App with CRUD
+                                    functionality AKA the clone of Google
+                                    TaskBoard - Desktop App. developed using
+                                    Vanilla Javascript.
+                                </p>
+                                <div class="project__linkBox flex">
+                                    <a
+                                        href="https://github.com/yashpandey002/TaskOn"
+                                        target="_blank"
+                                    >
+                                        <ion-icon
+                                            name="logo-github"
+                                            class="project__github"
+                                        ></ion-icon>
+                                    </a>
+                                    <a
+                                        href="https://taskonn.netlify.app/"
+                                        class="project__viewLive bg-gradient"
+                                        target="_blank"
+                                        >View Live
+                                        <img
+                                            src="./assets/img/arrow-right.png"
+                                            alt="Arrow right"
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project__imgBox">
+                                <a
+                                    href="https://taskonn.netlify.app/"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="./assets/img/taskon-screen.png"
+                                        alt="TaskOn project image"
+                                        class="project__screen"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project flex devity">
+                            <div class="project__textBox">
+                                <h3 class="project__heading">Devity</h3>
+                                <p class="project__desc font__secondary">
+                                    A landing page website for creative digital
+                                    agency. Developed using HTML, CSS and
+                                    Javascript and designed using only one color
+                                    for maximum user attention.
+                                </p>
+                                <div class="project__linkBox flex">
+                                    <a
+                                        href="https://github.com/yashpandey002/Devity"
+                                        target="_blank"
+                                    >
+                                        <ion-icon
+                                            name="logo-github"
+                                            class="project__github"
+                                        ></ion-icon>
+                                    </a>
+                                    <a
+                                        href="https://devity.netlify.app/"
+                                        class="project__viewLive bg-gradient"
+                                        target="_blank"
+                                        >View Live
+                                        <img
+                                            src="./assets/img/arrow-right.png"
+                                            alt="Arrow right"
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project__imgBox">
+                                <a
+                                    href="https://devity.netlify.app/"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="./assets/img/devity-screen.png"
+                                        alt="Devity project image"
+                                        class="project__screen"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project flex omnifood">
+                            <div class="project__textBox">
+                                <h3 class="project__heading">Omnifood</h3>
+                                <p class="project__desc font__secondary">
+                                    A highly responsive website for food
+                                    ordering startup. It looks perfect at any
+                                    screen and have some cool cSS transition
+                                    animations.
+                                </p>
+                                <div class="project__linkBox flex">
+                                    <a
+                                        href="https://github.com/yashpandey002/Omnifood"
+                                        target="_blank"
+                                    >
+                                        <ion-icon
+                                            name="logo-github"
+                                            class="project__github"
+                                        ></ion-icon>
+                                    </a>
+                                    <a
+                                        href="https://omnifood-by-yash-pandey.netlify.app/"
+                                        class="project__viewLive bg-gradient"
+                                        target="_blank"
+                                        >View Live
+                                        <img
+                                            src="./assets/img/arrow-right.png"
+                                            alt="Arrow right"
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project__imgBox">
+                                <a
+                                    href="https://omnifood-by-yash-pandey.netlify.app/"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="./assets/img/omnifood-screen.png"
+                                        alt="Devity project image"
+                                        class="project__screen"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project flex fixallfirst">
+                            <div class="project__textBox">
+                                <h3 class="project__heading">FixAllFirst</h3>
+                                <p class="project__desc font__secondary">
+                                    It's a simple and responsive website build
+                                    using old school CSS Floats, so that it
+                                    support all the old and current browsers.
+                                </p>
+                                <div class="project__linkBox flex">
+                                    <a
+                                        href="https://github.com/yashpandey002/FixAllFirst"
+                                        target="_blank"
+                                    >
+                                        <ion-icon
+                                            name="logo-github"
+                                            class="project__github"
+                                        ></ion-icon>
+                                    </a>
+                                    <a
+                                        href="https://fixallfirst.netlify.app/"
+                                        class="project__viewLive bg-gradient"
+                                        target="_blank"
+                                        >View Live
+                                        <img
+                                            src="./assets/img/arrow-right.png"
+                                            alt="Arrow right"
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project__imgBox">
+                                <a
+                                    href="https://fixallfirst.netlify.app/"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="./assets/img/fixallfirst-screen.png"
+                                        alt="Devity project image"
+                                        class="project__screen"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="contact">
+                <div class="container">
+                    <div class="contact__mainBox bg-gradient flex">
+                        <div class="contact__textBox">
+                            <h3 class="contact__heading">Let's Be In Touch</h3>
+                            <p class="contact__desc font__secondary">
+                                I am mostly active on
+                                <a
+                                    href="https://twitter.com/pandeyyash_"
+                                    target="_blank"
+                                    ><strong>Twitter</strong></a
+                                >
+                                and
+                                <a
+                                    href="https://www.linkedin.com/in/pandeyyash/"
+                                    target="_blank"
+                                    ><strong>Linkdin,</strong></a
+                                >
+                                feel free to contact me.
+                            </p>
+                            <a href="#" class="contact__email">
+                                <ion-icon
+                                    name="mail-outline"
+                                    class="contact__email-icon"
+                                ></ion-icon>
+                                pandeyyash002@gmail.com
+                            </a>
+                        </div>
+                        <div class="contact__imgBox">
+                            <img
+                                src="./assets/img/contact-illustration.svg"
+                                alt=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
-        <footer></footer>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__mainBox flex">
+                    <div class="footer__linkBox">
+                        <ul class="footer__linkContainer flex">
+                            <li>
+                                <a href="" class="footer__link">
+                                    <ion-icon
+                                        name="logo-twitter"
+                                        class="footer__link-icon footer__link-icon--twitter"
+                                    ></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="footer__link">
+                                    <ion-icon
+                                        name="logo-linkedin"
+                                        class="footer__link-icon footer__link-icon--linkedin"
+                                    ></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="footer__link">
+                                    <ion-icon
+                                        name="logo-github"
+                                        class="footer__link-icon footer__link-icon--github"
+                                    ></ion-icon>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="footer__link">
+                                    <img
+                                        src="./assets/img/upwork-icon.svg"
+                                        alt="Upwork logo"
+                                        class="footer__link--upwork"
+                                    />
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__textBox">
+                        <p class="footer__desc">
+                            Made with ❤️ by Yash Pandey in beautiful city of
+                            lakes, Udaipur.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
         <script
             type="module"
             src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
