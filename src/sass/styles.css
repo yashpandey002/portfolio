@@ -426,6 +426,11 @@ h2 {
   font-size: 6.4rem;
   color: var(--light-grey);
 }
+@media only screen and (max-width: 48em) {
+  h2 {
+    font-size: 5.6rem;
+  }
+}
 
 @media only screen and (max-width: 75em) {
   p {
@@ -488,6 +493,10 @@ h2 {
   background: linear-gradient(97.51deg, #7266ff 0%, #ff6666 63.72%, #69ff66 106.98%);
 }
 
+.rotate-3-deg-left {
+  transform: rotate(-3deg);
+}
+
 .cta__primary {
   display: inline-block;
   padding: 2rem 3rem;
@@ -497,8 +506,15 @@ h2 {
   color: var(--white);
   background-image: linear-gradient(97.51deg, #7266ff 0%, #ff6666 63.72%, #69ff66 106.98%);
   border-radius: 5px;
-  transform: rotate(-3deg);
   position: relative;
+}
+@media only screen and (max-width: 48em) {
+  .cta__primary {
+    transform: none;
+    width: 50%;
+    text-align: center;
+    padding: 2rem 0;
+  }
 }
 .cta__primary::before {
   position: absolute;
@@ -524,6 +540,7 @@ h2 {
 @media only screen and (max-width: 64em) {
   .project {
     flex-direction: column;
+    gap: 7.2rem;
   }
 }
 .project__heading {
@@ -536,6 +553,11 @@ h2 {
   color: var(--light-grey);
   line-height: 1.5;
   margin-bottom: 4rem;
+}
+@media only screen and (max-width: 64em) {
+  .project__desc {
+    max-width: 600px;
+  }
 }
 .project__linkBox {
   gap: 3.2rem;
@@ -562,9 +584,9 @@ h2 {
 .project__screen {
   transition: transform 0.3s;
 }
-@media only screen and (max-width: 56.6em) {
+@media only screen and (max-width: 64em) {
   .project__screen {
-    width: 60%;
+    width: 100%;
   }
 }
 .project__screen:hover {
@@ -615,8 +637,18 @@ h2 {
   align-items: center;
   justify-content: space-between;
 }
+@media only screen and (max-width: 48em) {
+  .footer__mainBox {
+    flex-direction: column;
+  }
+}
 .footer__linkContainer {
   gap: 5.6rem;
+}
+@media only screen and (max-width: 48em) {
+  .footer__linkBox {
+    margin-bottom: 3.2rem;
+  }
 }
 .footer__link-icon {
   font-size: 4rem;
@@ -640,9 +672,19 @@ h2 {
   color: var(--light-grey);
   font-weight: 300;
 }
+@media only screen and (max-width: 48em) {
+  .footer__desc {
+    text-align: center;
+  }
+}
 
 .hero {
   margin-bottom: 15rem;
+}
+@media only screen and (max-width: 64em) {
+  .hero {
+    margin-bottom: 11.2rem;
+  }
 }
 .hero__container {
   max-width: 1100px;
@@ -672,12 +714,28 @@ h2 {
 }
 @media only screen and (max-width: 64em) {
   .hero__secondary {
+    gap: 3rem;
+  }
+}
+@media only screen and (max-width: 56.6em) {
+  .hero__secondary {
     gap: 2rem;
+  }
+}
+@media only screen and (max-width: 48em) {
+  .hero__secondary {
+    flex-direction: column;
   }
 }
 @media only screen and (max-width: 64em) {
   .hero__secondary-image {
     width: 90%;
+  }
+}
+@media only screen and (max-width: 48em) {
+  .hero__secondary-image {
+    width: 40%;
+    margin-bottom: 2.4rem;
   }
 }
 .hero__subheading {
@@ -691,11 +749,6 @@ h2 {
 }
 .hero__subheading-box {
   margin-bottom: 2rem;
-}
-@media only screen and (max-width: 64em) {
-  .hero__subheading {
-    margin-bottom: -2rem;
-  }
 }
 .hero__heading {
   font-size: 9.6rem;
@@ -720,6 +773,7 @@ h2 {
 @media only screen and (max-width: 40em) {
   .hero__heading {
     font-size: 5.6rem;
+    line-height: 1.4;
   }
 }
 .hero__cta-box {
@@ -742,22 +796,28 @@ h2 {
 }
 @media only screen and (max-width: 64em) {
   .hero__arrow {
-    height: 160px;
-    width: auto;
-    left: -20%;
+    height: 170px;
+    left: -24%;
+  }
+}
+@media only screen and (max-width: 56.6em) {
+  .hero__arrow {
+    height: 150px;
   }
 }
 @media only screen and (max-width: 48em) {
   .hero__arrow {
-    height: 100px;
-    width: auto;
-    left: -15%;
-    top: -100%;
+    display: none;
   }
 }
 
 .about {
   margin-bottom: 15rem;
+}
+@media only screen and (max-width: 64em) {
+  .about {
+    margin-bottom: 11.2rem;
+  }
 }
 .about__heading {
   margin-bottom: 3.2rem;
@@ -774,11 +834,35 @@ h2 {
   grid-template-rows: repeat(4, 1fr);
   row-gap: 2.4rem;
 }
+@media only screen and (max-width: 64em) {
+  .about__skillsBox {
+    grid-template-rows: 1fr;
+    grid-template-columns: min-content min-content min-content min-content;
+    column-gap: 2rem;
+    text-align: right;
+  }
+}
+@media only screen and (max-width: 48em) {
+  .about__skillsBox {
+    grid-template-rows: 1fr;
+    grid-template-columns: min-content min-content;
+  }
+}
 .about__skillsBox__skillImg {
   height: 50px;
 }
 .about__skillsBox-row {
   gap: 2.4rem;
+}
+@media only screen and (max-width: 64em) {
+  .about__skillsBox-row {
+    gap: 2rem;
+  }
+}
+@media only screen and (max-width: 64em) {
+  .about__desc {
+    margin-bottom: 4.8rem;
+  }
 }
 .about__descPara {
   font-size: var(--size-large);
@@ -792,6 +876,11 @@ h2 {
 .projects {
   margin-bottom: 15rem;
 }
+@media only screen and (max-width: 64em) {
+  .projects {
+    margin-bottom: 11.2rem;
+  }
+}
 .projects__heading {
   margin-bottom: 6.4rem;
 }
@@ -799,9 +888,19 @@ h2 {
   flex-direction: column;
   gap: 14.4rem;
 }
+@media only screen and (max-width: 64em) {
+  .projects__mainBox {
+    gap: 9.6rem;
+  }
+}
 
 .contact {
   margin-bottom: 18rem;
+}
+@media only screen and (max-width: 64em) {
+  .contact {
+    margin-bottom: 14.4rem;
+  }
 }
 .contact__mainBox {
   width: 83%;
@@ -813,6 +912,18 @@ h2 {
 @media only screen and (max-width: 64em) {
   .contact__mainBox {
     flex-direction: column;
+    padding: 5.6rem 7.2rem;
+  }
+}
+@media only screen and (max-width: 48em) {
+  .contact__mainBox {
+    width: 90%;
+    padding: 4.8rem 5.6rem;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .contact__mainBox {
+    width: 100%;
   }
 }
 .contact__heading {
@@ -827,6 +938,11 @@ h2 {
   line-height: 1.6;
   margin-bottom: 5.6rem;
 }
+@media only screen and (max-width: 64em) {
+  .contact__desc {
+    max-width: 100%;
+  }
+}
 .contact__email {
   font-size: var(--size-large);
   font-weight: 300;
@@ -834,6 +950,12 @@ h2 {
   padding: 2.4rem 4.8rem;
   border: 1px solid var(--white);
   position: relative;
+}
+@media only screen and (max-width: 38em) {
+  .contact__email {
+    width: 100%;
+    padding: 1.2rem 2.4rem;
+  }
 }
 .contact__email:hover {
   border: 1px solid #592c42;
@@ -859,6 +981,11 @@ h2 {
   left: 7rem;
   background-color: var(--white);
 }
+@media only screen and (max-width: 38em) {
+  .contact__email::before {
+    left: 5rem;
+  }
+}
 .contact__email-icon {
   font-size: 2rem;
   color: var(--white);
@@ -866,6 +993,11 @@ h2 {
   margin-left: -2rem;
   margin-right: 4rem;
   z-index: -9999;
+}
+@media only screen and (max-width: 38em) {
+  .contact__email-icon {
+    margin-left: -1rem;
+  }
 }
 .contact__email-cta {
   position: absolute;
@@ -893,4 +1025,11 @@ h2 {
 }
 .contact__imgBox {
   padding-top: 12rem;
+}
+@media only screen and (max-width: 64em) {
+  .contact__imgBox {
+    padding-top: 3.2rem;
+    text-align: right;
+    display: none;
+  }
 }

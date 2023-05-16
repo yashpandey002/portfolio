@@ -3,6 +3,7 @@
 
     @include respond(tab-land) {
         flex-direction: column;
+        gap: 7.2rem;
     }
 
     &__heading {
@@ -16,6 +17,10 @@
         color: var(--light-grey);
         line-height: 1.5;
         margin-bottom: 4rem;
+
+        @include respond(tab-land) {
+            max-width: 600px;
+        }
     }
 
     &__linkBox {
@@ -47,8 +52,8 @@
 
     &__screen {
         transition: transform 0.3s;
-        @include respond(tab-port) {
-            width: 60%;
+        @include respond(tab-land) {
+            width: 100%;
         }
         &:hover {
             transform: scale(1.03);

@@ -1,6 +1,10 @@
 .hero {
     margin-bottom: 15rem;
 
+    @include respond(tab-land) {
+        margin-bottom: 11.2rem;
+    }
+
     &__container {
         max-width: 1100px;
         margin: 0 auto;
@@ -25,12 +29,25 @@
         gap: 8rem;
 
         @include respond(tab-land) {
+            gap: 3rem;
+        }
+
+        @include respond(tab-port) {
             gap: 2rem;
+        }
+
+        @include respond(small-tab) {
+            flex-direction: column;
         }
 
         &-image {
             @include respond(tab-land) {
                 width: 90%;
+            }
+
+            @include respond(small-tab) {
+                width: 40%;
+                margin-bottom: 2.4rem;
             }
         }
     }
@@ -50,7 +67,7 @@
         }
 
         @include respond(tab-land) {
-            margin-bottom: -2rem;
+            // margin-bottom: -2rem;
         }
     }
 
@@ -78,6 +95,7 @@
 
         @include respond(mobile) {
             font-size: 5.6rem;
+            line-height: 1.4;
         }
     }
 
@@ -103,22 +121,26 @@
         left: -25%;
 
         @include respond(tab-land) {
-            height: 160px;
-            width: auto;
-            left: -20%;
+            height: 170px;
+            left: -24%;
+        }
+
+        @include respond(tab-port) {
+            height: 150px;
         }
 
         @include respond(small-tab) {
-            height: 100px;
-            width: auto;
-            left: -15%;
-            top: -100%;
+            display: none;
         }
     }
 }
 
 .about {
     margin-bottom: 15rem;
+
+    @include respond(tab-land) {
+        margin-bottom: 11.2rem;
+    }
 
     &__heading {
         margin-bottom: 3.2rem;
@@ -136,12 +158,33 @@
         grid-template-rows: repeat(4, 1fr);
         row-gap: 2.4rem;
 
+        @include respond(tab-land) {
+            grid-template-rows: 1fr;
+            grid-template-columns: min-content min-content min-content min-content;
+            column-gap: 2rem;
+            text-align: right;
+        }
+
+        @include respond(small-tab) {
+            grid-template-rows: 1fr;
+            grid-template-columns: min-content min-content;
+        }
+
         &__skillImg {
             height: 50px;
         }
 
         &-row {
             gap: 2.4rem;
+            @include respond(tab-land) {
+                gap: 2rem;
+            }
+        }
+    }
+
+    &__desc {
+        @include respond(tab-land) {
+            margin-bottom: 4.8rem;
         }
     }
 
@@ -159,6 +202,10 @@
 .projects {
     margin-bottom: 15rem;
 
+    @include respond(tab-land) {
+        margin-bottom: 11.2rem;
+    }
+
     &__heading {
         margin-bottom: 6.4rem;
     }
@@ -166,11 +213,19 @@
     &__mainBox {
         flex-direction: column;
         gap: 14.4rem;
+
+        @include respond(tab-land) {
+            gap: 9.6rem;
+        }
     }
 }
 
 .contact {
     margin-bottom: 18rem;
+
+    @include respond(tab-land) {
+        margin-bottom: 14.4rem;
+    }
 
     &__mainBox {
         width: 83%;
@@ -181,6 +236,16 @@
 
         @include respond(tab-land) {
             flex-direction: column;
+            padding: 5.6rem 7.2rem;
+        }
+
+        @include respond(small-tab) {
+            width: 90%;
+            padding: 4.8rem 5.6rem;
+        }
+
+        @include respond(mobile) {
+            width: 100%;
         }
     }
 
@@ -196,6 +261,10 @@
         color: var(--white);
         line-height: 1.6;
         margin-bottom: 5.6rem;
+
+        @include respond(tab-land) {
+            max-width: 100%;
+        }
     }
 
     &__email {
@@ -205,6 +274,11 @@
         padding: 2.4rem 4.8rem;
         border: 1px solid var(--white);
         position: relative;
+
+        @include respond(smallest-screens) {
+            width: 100%;
+            padding: 1.2rem 2.4rem;
+        }
 
         &:hover {
             border: 1px solid #592c42;
@@ -233,6 +307,10 @@
             top: 0;
             left: 7rem;
             background-color: var(--white);
+
+            @include respond(smallest-screens) {
+                left: 5rem;
+            }
         }
 
         &-icon {
@@ -242,6 +320,10 @@
             margin-left: -2rem;
             margin-right: 4rem;
             z-index: -9999;
+
+            @include respond(smallest-screens) {
+                margin-left: -1rem;
+            }
         }
 
         &-cta {
@@ -274,5 +356,11 @@
 
     &__imgBox {
         padding-top: 12rem;
+
+        @include respond(tab-land) {
+            padding-top: 3.2rem;
+            text-align: right;
+            display: none;
+        }
     }
 }

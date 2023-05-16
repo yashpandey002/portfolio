@@ -1,9 +1,17 @@
 .footer {
     margin-bottom: 3.2rem;
 
+    @include respond(small-tab) {
+        // marg
+    }
+
     &__mainBox {
         align-items: center;
         justify-content: space-between;
+
+        @include respond(small-tab) {
+            flex-direction: column;
+        }
     }
 
     &__linkContainer {
@@ -11,6 +19,12 @@
     }
 
     &__link {
+        &Box {
+            @include respond(small-tab) {
+                margin-bottom: 3.2rem;
+            }
+        }
+
         &-icon {
             font-size: 4rem;
             color: var(--light-grey);
@@ -36,5 +50,9 @@
         font-size: var(--size-large);
         color: var(--light-grey);
         font-weight: 300;
+
+        @include respond(small-tab) {
+            text-align: center;
+        }
     }
 }

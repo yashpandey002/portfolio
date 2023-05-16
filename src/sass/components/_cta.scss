@@ -13,8 +13,14 @@
             #69ff66 106.98%
         );
         border-radius: 5px;
-        transform: rotate(-3deg);
         position: relative;
+
+        @include respond(small-tab) {
+            transform: none;
+            width: 50%;
+            text-align: center;
+            padding: 2rem 0;
+        }
 
         &::before {
             position: absolute;

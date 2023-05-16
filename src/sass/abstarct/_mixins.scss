@@ -1,4 +1,11 @@
 @mixin respond($breakpoint) {
+    @if $breakpoint == smallest-screens {
+        // 460/16 px -> 38em
+        @media only screen and (max-width: 38em) {
+            @content;
+        }
+    }
+
     @if $breakpoint == mobile {
         // 640/16 px -> 40em
         @media only screen and (max-width: 40em) {
