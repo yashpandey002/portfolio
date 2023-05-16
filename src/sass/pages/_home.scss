@@ -183,6 +183,10 @@
         @include respond(mobile) {
             height: 40px;
         }
+
+        @include respond(smallest-screens) {
+            height: 30px;
+        }
     }
 
     &__desc {
@@ -364,7 +368,6 @@
             transform: translateX(-50%);
             font-size: 1.6rem;
             background-color: #592c42;
-            // background-color: #2c5937;
             padding: 5px 0;
             width: 100%;
             text-align: center;
