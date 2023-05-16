@@ -224,12 +224,29 @@
 }
 
 .contact {
+    margin-bottom: 18rem;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 100vw;
+        height: 1px;
+        background: linear-gradient(
+            97.51deg,
+            #7266ff 0%,
+            #ff6666 63.72%,
+            #69ff66 106.98%
+        );
+        top: 40%;
+        right: 0;
+        z-index: -9999;
+    }
+
     @include respond(mobile) {
         width: 100%;
         margin: 0 auto;
     }
-
-    margin-bottom: 18rem;
 
     @include respond(tab-land) {
         margin-bottom: 14.4rem;
@@ -254,7 +271,12 @@
 
         @include respond(mobile) {
             width: 100%;
-            padding: 2.4rem 3.2rem;
+            padding: 4.8rem 3.2rem;
+        }
+
+        @include respond(smallest-screens) {
+            width: 100%;
+            padding: 5.6rem 3.2rem;
         }
     }
 
