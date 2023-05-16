@@ -170,15 +170,18 @@
             grid-template-columns: min-content min-content;
         }
 
-        &__skillImg {
-            height: 50px;
-        }
-
         &-row {
             gap: 2.4rem;
             @include respond(tab-land) {
                 gap: 2rem;
             }
+        }
+    }
+
+    &__skillImg {
+        height: 50px;
+        @include respond(mobile) {
+            height: 40px;
         }
     }
 
@@ -221,6 +224,11 @@
 }
 
 .contact {
+    @include respond(mobile) {
+        width: 100%;
+        margin: 0 auto;
+    }
+
     margin-bottom: 18rem;
 
     @include respond(tab-land) {
@@ -246,6 +254,7 @@
 
         @include respond(mobile) {
             width: 100%;
+            padding: 2.4rem 3.2rem;
         }
     }
 
@@ -277,7 +286,7 @@
 
         @include respond(smallest-screens) {
             width: 100%;
-            padding: 1.2rem 2.4rem;
+            padding: 1rem 2.4rem;
         }
 
         &:hover {

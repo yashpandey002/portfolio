@@ -630,6 +630,14 @@ h2 {
   font-size: 2rem;
 }
 
+@media only screen and (max-width: 48em) {
+  .mobile__menu-icon {
+    display: block;
+    font-size: 2rem;
+    color: var(--light-grey);
+  }
+}
+
 .footer {
   margin-bottom: 3.2rem;
 }
@@ -848,15 +856,20 @@ h2 {
     grid-template-columns: min-content min-content;
   }
 }
-.about__skillsBox__skillImg {
-  height: 50px;
-}
 .about__skillsBox-row {
   gap: 2.4rem;
 }
 @media only screen and (max-width: 64em) {
   .about__skillsBox-row {
     gap: 2rem;
+  }
+}
+.about__skillImg {
+  height: 50px;
+}
+@media only screen and (max-width: 40em) {
+  .about__skillImg {
+    height: 40px;
   }
 }
 @media only screen and (max-width: 64em) {
@@ -897,6 +910,12 @@ h2 {
 .contact {
   margin-bottom: 18rem;
 }
+@media only screen and (max-width: 40em) {
+  .contact {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
 @media only screen and (max-width: 64em) {
   .contact {
     margin-bottom: 14.4rem;
@@ -924,6 +943,7 @@ h2 {
 @media only screen and (max-width: 40em) {
   .contact__mainBox {
     width: 100%;
+    padding: 2.4rem 3.2rem;
   }
 }
 .contact__heading {
@@ -954,7 +974,7 @@ h2 {
 @media only screen and (max-width: 38em) {
   .contact__email {
     width: 100%;
-    padding: 1.2rem 2.4rem;
+    padding: 1rem 2.4rem;
   }
 }
 .contact__email:hover {

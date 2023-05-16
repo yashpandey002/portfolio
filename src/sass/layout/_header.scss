@@ -15,6 +15,12 @@
             color: var(--light-grey);
             transition: color 0.3s;
 
+            &-box {
+                @include respond(tab-land) {
+                    // display: none;
+                }
+            }
+
             &-container {
                 gap: 4rem;
                 align-items: center;
@@ -42,5 +48,13 @@
         &-icon {
             font-size: 2rem;
         }
+    }
+}
+
+.mobile__menu-icon {
+    @include respond(small-tab) {
+        display: block;
+        font-size: 2rem;
+        color: var(--light-grey);
     }
 }
