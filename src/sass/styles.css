@@ -719,7 +719,7 @@ h2 {
 }
 @media only screen and (max-width: 40em) {
   .hero__heading {
-    font-size: 8rem;
+    font-size: 5.6rem;
   }
 }
 .hero__cta-box {
