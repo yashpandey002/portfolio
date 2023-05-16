@@ -1,6 +1,9 @@
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    @include respond(desktop) {
+        padding: 0 4rem;
+    }
 }
 
 .flex {
@@ -17,6 +20,17 @@
 
 .hide {
     display: none;
+}
+
+.hide-with-animation {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+.show-with-animation {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
 }
 
 .text-gradient {

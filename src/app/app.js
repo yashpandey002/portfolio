@@ -25,3 +25,12 @@ allLinks.forEach(function (link) {
             headerEl.classList.toggle('nav-open');
     });
 });
+
+const emailBtn = document.querySelector('.contact__email');
+
+emailBtn.addEventListener('click', () => {
+    const emailCta = document.querySelector('.contact__email-cta');
+    const email = 'pandeyyash002@gmail.com';
+    navigator.clipboard.writeText(email);
+    emailCta.textContent = 'Email copied';
+});

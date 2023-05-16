@@ -1,2 +1,38 @@
-
-
+@mixin respond($breakpoint) {
+    @if $breakpoint == mobile {
+        // 640/16 px -> 40em
+        @media only screen and (max-width: 40em) {
+            @content;
+        }
+    }
+    @if $breakpoint == small-tab {
+        // 768/16 px -> 48em
+        @media only screen and (max-width: 48em) {
+            @content;
+        }
+    }
+    @if $breakpoint == tab-port {
+        // 890/16 px -> 55.6em
+        @media only screen and (max-width: 56.6em) {
+            @content;
+        }
+    }
+    @if $breakpoint == tab-land {
+        // 1024/16 px -> 64em
+        @media only screen and (max-width: 64em) {
+            @content;
+        }
+    }
+    @if $breakpoint == desktop {
+        // 1200/16 px -> 75em
+        @media only screen and (max-width: 75em) {
+            @content;
+        }
+    }
+    @if $breakpoint == big-desktop {
+        // 1344/16 px -> 84em
+        @media only screen and (max-width: 84em) {
+            @content;
+        }
+    }
+}

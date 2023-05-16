@@ -1,5 +1,12 @@
 html {
     font-size: 62.5%;
+    @include respond(desktop) {
+        font-size: 56.25%;
+    }
+
+    @include respond(tab-port) {
+        font-size: 50%;
+    }
 }
 
 body {
@@ -15,4 +22,14 @@ body {
 h2 {
     font-size: 6.4rem;
     color: var(--light-grey);
+}
+
+p {
+    @include respond(desktop) {
+        font-size: 1.9rem;
+    }
+
+    @include respond(tab-port) {
+        font-size: 2rem;
+    }
 }

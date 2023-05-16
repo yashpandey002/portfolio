@@ -1,6 +1,10 @@
 .project {
     gap: 12rem;
 
+    @include respond(tab-land) {
+        flex-direction: column;
+    }
+
     &__heading {
         font-size: 3.2rem;
         color: var(--white);
@@ -43,6 +47,9 @@
 
     &__screen {
         transition: transform 0.3s;
+        @include respond(tab-port) {
+            width: 60%;
+        }
         &:hover {
             transform: scale(1.03);
         }

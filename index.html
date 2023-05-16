@@ -15,6 +15,7 @@
             rel="stylesheet"
         />
         <title>Yash Pandey - Creative Web Developer</title>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="./src/sass/styles.css" type="text/css" />
         <script src="src/app/app.js" defer></script>
     </head>
@@ -69,7 +70,8 @@
                         </li>
                         <li>
                             <a
-                                href="#"
+                                href="https://drive.google.com/file/d/1yZQV6276p1nerQF1SzRHci_Yj9uAZU-v/view?usp=sharing"
+                                target="_blank"
                                 class="header__nav-link header__nav-link--resume flex"
                             >
                                 Resume
@@ -255,7 +257,11 @@
                 </div>
                 <div class="container">
                     <div class="projects__mainBox flex">
-                        <div class="project flex taskOn">
+                        <div
+                            class="project flex taskOn"
+                            data-aos="fade-up"
+                            data-aos-duration="1500"
+                        >
                             <div class="project__textBox">
                                 <h3 class="project__heading">TaskOn</h3>
                                 <p class="project__desc font__secondary">
@@ -299,18 +305,20 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="project flex devity">
+                        <div
+                            class="project flex designo"
+                            data-aos="fade-up"
+                            data-aos-duration="1500"
+                        >
                             <div class="project__textBox">
-                                <h3 class="project__heading">Devity</h3>
+                                <h3 class="project__heading">Designo</h3>
                                 <p class="project__desc font__secondary">
-                                    A landing page website for creative digital
-                                    agency. Developed using HTML, CSS and
-                                    Javascript and designed using only one color
-                                    for maximum user attention.
+                                    A digital agency landing page built using
+                                    Tailwind CSS.
                                 </p>
                                 <div class="project__linkBox flex">
                                     <a
-                                        href="https://github.com/yashpandey002/Devity"
+                                        href="https://github.com/yashpandey002/designo-landing-page"
                                         target="_blank"
                                     >
                                         <ion-icon
@@ -319,7 +327,7 @@
                                         ></ion-icon>
                                     </a>
                                     <a
-                                        href="https://devity.netlify.app/"
+                                        href="https://designo-by-yash-pandey.netlify.app/"
                                         class="project__viewLive bg-gradient"
                                         target="_blank"
                                         >View Live
@@ -332,18 +340,68 @@
                             </div>
                             <div class="project__imgBox">
                                 <a
-                                    href="https://devity.netlify.app/"
+                                    href="https://designo-by-yash-pandey.netlify.app/"
                                     target="_blank"
                                 >
                                     <img
-                                        src="./assets/img/devity-screen.png"
+                                        src="./assets/img/designo-screen.png"
                                         alt="Devity project image"
                                         class="project__screen"
                                     />
                                 </a>
                             </div>
                         </div>
-                        <div class="project flex omnifood">
+                        <div
+                            class="project flex countrify"
+                            data-aos="fade-up"
+                            data-aos-duration="1500"
+                        >
+                            <div class="project__textBox">
+                                <h3 class="project__heading">Countrify</h3>
+                                <p class="project__desc font__secondary">
+                                    A simple app to search for any country's
+                                    information using REST COUNTRIES API.
+                                </p>
+                                <div class="project__linkBox flex">
+                                    <a
+                                        href="https://github.com/yashpandey002/countrify"
+                                        target="_blank"
+                                    >
+                                        <ion-icon
+                                            name="logo-github"
+                                            class="project__github"
+                                        ></ion-icon>
+                                    </a>
+                                    <a
+                                        href="https://countrify-project.netlify.app/"
+                                        class="project__viewLive bg-gradient"
+                                        target="_blank"
+                                        >View Live
+                                        <img
+                                            src="./assets/img/arrow-right.png"
+                                            alt="Arrow right"
+                                        />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project__imgBox">
+                                <a
+                                    href="https://countrify-project.netlify.app/"
+                                    target="_blank"
+                                >
+                                    <img
+                                        src="./assets/img/countrify-screen.svg"
+                                        alt="Devity project image"
+                                        class="project__screen"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                        <div
+                            class="project flex omnifood"
+                            data-aos="fade-up"
+                            data-aos-duration="1500"
+                        >
                             <div class="project__textBox">
                                 <h3 class="project__heading">Omnifood</h3>
                                 <p class="project__desc font__secondary">
@@ -387,49 +445,6 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="project flex fixallfirst">
-                            <div class="project__textBox">
-                                <h3 class="project__heading">FixAllFirst</h3>
-                                <p class="project__desc font__secondary">
-                                    It's a simple and responsive website build
-                                    using old school CSS Floats, so that it
-                                    support all the old and current browsers.
-                                </p>
-                                <div class="project__linkBox flex">
-                                    <a
-                                        href="https://github.com/yashpandey002/FixAllFirst"
-                                        target="_blank"
-                                    >
-                                        <ion-icon
-                                            name="logo-github"
-                                            class="project__github"
-                                        ></ion-icon>
-                                    </a>
-                                    <a
-                                        href="https://fixallfirst.netlify.app/"
-                                        class="project__viewLive bg-gradient"
-                                        target="_blank"
-                                        >View Live
-                                        <img
-                                            src="./assets/img/arrow-right.png"
-                                            alt="Arrow right"
-                                        />
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="project__imgBox">
-                                <a
-                                    href="https://fixallfirst.netlify.app/"
-                                    target="_blank"
-                                >
-                                    <img
-                                        src="./assets/img/fixallfirst-screen.png"
-                                        alt="Devity project image"
-                                        class="project__screen"
-                                    />
-                                </a>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -439,26 +454,33 @@
                         <div class="contact__textBox">
                             <h3 class="contact__heading">Let's Be In Touch</h3>
                             <p class="contact__desc font__secondary">
-                                I am mostly active on
+                                I'm always happy to chat, answer questions, or
+                                help in any way I can. Feel free to contact me
+                                via
                                 <a
                                     href="https://twitter.com/pandeyyash_"
                                     target="_blank"
                                     ><strong>Twitter</strong></a
                                 >
-                                and
+                                or
                                 <a
                                     href="https://www.linkedin.com/in/pandeyyash/"
                                     target="_blank"
-                                    ><strong>Linkdin,</strong></a
-                                >
-                                feel free to contact me.
+                                    ><strong>Linkdin</strong></a
+                                >.
                             </p>
-                            <a href="#" class="contact__email">
-                                <ion-icon
-                                    name="mail-outline"
-                                    class="contact__email-icon"
-                                ></ion-icon>
+                            <a
+                                href="mailto: pandeyyash002@gmail.com"
+                                class="contact__email"
+                            >
+                                <span class="contact__email-icon">
+                                    <ion-icon name="mail-outline"></ion-icon>
+                                </span>
                                 pandeyyash002@gmail.com
+                                <span
+                                    class="hide-with-animation contact__email-cta"
+                                    >Click To Copy Email</span
+                                >
                             </a>
                         </div>
                         <div class="contact__imgBox">
@@ -477,7 +499,11 @@
                     <div class="footer__linkBox">
                         <ul class="footer__linkContainer flex">
                             <li>
-                                <a href="" class="footer__link">
+                                <a
+                                    href="https://twitter.com/pandeyyash_"
+                                    target="_blank"
+                                    class="footer__link"
+                                >
                                     <ion-icon
                                         name="logo-twitter"
                                         class="footer__link-icon footer__link-icon--twitter"
@@ -485,7 +511,11 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="" class="footer__link">
+                                <a
+                                    href="https://www.linkedin.com/in/pandeyyash/"
+                                    target="_blank"
+                                    class="footer__link"
+                                >
                                     <ion-icon
                                         name="logo-linkedin"
                                         class="footer__link-icon footer__link-icon--linkedin"
@@ -493,7 +523,11 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="" class="footer__link">
+                                <a
+                                    href="https://github.com/yashpandey002"
+                                    target="_blank"
+                                    class="footer__link"
+                                >
                                     <ion-icon
                                         name="logo-github"
                                         class="footer__link-icon footer__link-icon--github"
@@ -501,7 +535,11 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="" class="footer__link">
+                                <a
+                                    href="https://www.upwork.com/freelancers/~01257c6c6152f81be8"
+                                    target="_blank"
+                                    class="footer__link"
+                                >
                                     <img
                                         src="./assets/img/upwork-icon.svg"
                                         alt="Upwork logo"
@@ -528,5 +566,9 @@
             nomodule
             src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
         ></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

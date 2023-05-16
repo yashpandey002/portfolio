@@ -401,6 +401,16 @@ fieldset {
 html {
   font-size: 62.5%;
 }
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 56.6em) {
+  html {
+    font-size: 50%;
+  }
+}
 
 body {
   font-family: "Urbanist", sans-serif;
@@ -417,9 +427,25 @@ h2 {
   color: var(--light-grey);
 }
 
+@media only screen and (max-width: 75em) {
+  p {
+    font-size: 1.9rem;
+  }
+}
+@media only screen and (max-width: 56.6em) {
+  p {
+    font-size: 2rem;
+  }
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+@media only screen and (max-width: 75em) {
+  .container {
+    padding: 0 4rem;
+  }
 }
 
 .flex {
@@ -436,6 +462,18 @@ h2 {
 
 .hide {
   display: none;
+}
+
+.hide-with-animation {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.show-with-animation {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
 }
 
 .text-gradient {
@@ -483,6 +521,11 @@ h2 {
 .project {
   gap: 12rem;
 }
+@media only screen and (max-width: 64em) {
+  .project {
+    flex-direction: column;
+  }
+}
 .project__heading {
   font-size: 3.2rem;
   color: var(--white);
@@ -518,6 +561,11 @@ h2 {
 }
 .project__screen {
   transition: transform 0.3s;
+}
+@media only screen and (max-width: 56.6em) {
+  .project__screen {
+    width: 60%;
+  }
 }
 .project__screen:hover {
   transform: scale(1.03);
@@ -600,11 +648,37 @@ h2 {
   max-width: 1100px;
   margin: 0 auto;
 }
+@media only screen and (max-width: 75em) {
+  .hero__container {
+    padding-left: 4rem;
+  }
+}
+@media only screen and (max-width: 64em) {
+  .hero__container {
+    max-width: 100%;
+    padding: 0 6rem;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .hero__container {
+    padding: 0 4rem;
+  }
+}
 .hero__primary {
   margin-bottom: 4.8rem;
 }
 .hero__secondary {
   gap: 8rem;
+}
+@media only screen and (max-width: 64em) {
+  .hero__secondary {
+    gap: 2rem;
+  }
+}
+@media only screen and (max-width: 64em) {
+  .hero__secondary-image {
+    width: 90%;
+  }
 }
 .hero__subheading {
   font-size: var(--size-small);
@@ -617,6 +691,11 @@ h2 {
 }
 .hero__subheading-box {
   margin-bottom: 2rem;
+}
+@media only screen and (max-width: 64em) {
+  .hero__subheading {
+    margin-bottom: -2rem;
+  }
 }
 .hero__heading {
   font-size: 9.6rem;
@@ -632,6 +711,16 @@ h2 {
 }
 .hero__heading--open-source {
   color: var(--green);
+}
+@media only screen and (max-width: 64em) {
+  .hero__heading {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 40em) {
+  .hero__heading {
+    font-size: 8rem;
+  }
 }
 .hero__cta-box {
   position: relative;
@@ -651,6 +740,21 @@ h2 {
   top: -170%;
   left: -25%;
 }
+@media only screen and (max-width: 64em) {
+  .hero__arrow {
+    height: 160px;
+    width: auto;
+    left: -20%;
+  }
+}
+@media only screen and (max-width: 48em) {
+  .hero__arrow {
+    height: 100px;
+    width: auto;
+    left: -15%;
+    top: -100%;
+  }
+}
 
 .about {
   margin-bottom: 15rem;
@@ -660,6 +764,11 @@ h2 {
 }
 .about__mainBox {
   column-gap: 12rem;
+}
+@media only screen and (max-width: 64em) {
+  .about__mainBox {
+    flex-direction: column;
+  }
 }
 .about__skillsBox {
   grid-template-rows: repeat(4, 1fr);
@@ -688,7 +797,7 @@ h2 {
 }
 .projects__mainBox {
   flex-direction: column;
-  gap: 9.6rem;
+  gap: 14.4rem;
 }
 
 .contact {
@@ -700,6 +809,11 @@ h2 {
   padding-left: 7.2rem;
   padding-top: 5.6rem;
   border-radius: 10px;
+}
+@media only screen and (max-width: 64em) {
+  .contact__mainBox {
+    flex-direction: column;
+  }
 }
 .contact__heading {
   font-size: 7.2rem;
@@ -717,14 +831,65 @@ h2 {
   font-size: var(--size-large);
   font-weight: 300;
   color: var(--white);
-  padding: 2.4rem 0;
-  padding-left: 12rem;
-  padding-right: 3.2rem;
+  padding: 2.4rem 4.8rem;
   border: 1px solid var(--white);
+  position: relative;
+}
+.contact__email:hover {
+  border: 1px solid #592c42;
+  filter: blur(2);
+}
+.contact__email:hover::before {
+  background-color: #592c42;
+}
+.contact__email:hover .contact__email-icon {
+  color: #592c42;
+}
+.contact__email:hover .contact__email-cta {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+.contact__email::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 1px;
+  top: 0;
+  left: 7rem;
+  background-color: var(--white);
 }
 .contact__email-icon {
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: var(--white);
+  vertical-align: middle;
+  margin-left: -2rem;
+  margin-right: 4rem;
+  z-index: -9999;
+}
+.contact__email-cta {
+  position: absolute;
+  top: -4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1.6rem;
+  background-color: #592c42;
+  padding: 5px 0;
+  width: 100%;
+  text-align: center;
+  transition: all 0.5s;
+}
+.contact__email-cta::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 1.5rem solid transparent;
+  border-right: 1.5rem solid transparent;
+  border-top: 1.5rem solid #592c42;
+  position: absolute;
+  bottom: -8px;
+  left: 45%;
+  z-index: -999999;
 }
 .contact__imgBox {
   padding-top: 12rem;
